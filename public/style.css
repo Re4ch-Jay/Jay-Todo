@@ -1,0 +1,24 @@
+body{
+    background-color: #eee;
+}
+
+.card-body{
+    text-decoration: none;
+    border-left:8px solid white;
+}
+
+.card-body:hover{
+    text-decoration: line-through;
+    border-left:8px solid red;
+
+}
+
+footer{
+    width: 1500px;
+    margin: 10px auto;
+}
+footer p {
+    border-top: 1px solid #bbb;
+    padding: 50px 0;
+    
+}

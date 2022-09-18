@@ -12,14 +12,6 @@ const post_todo = (req, res) => {
         .then(result => res.redirect('/todo'))
         .catch(err => console.log(err))
 }
-const get_single_todo = (req, res) => {
-    const id = req.params.id
-    Todo.findById(id)
-        .then(result =>{
-            res.render({todo: result})
-        })
-        .catch(err => console.log(err))
-}
 
 const delete_todo = (req, res) => {
     const id = req.params.id
@@ -32,5 +24,4 @@ module.exports = {
     get_todo,
     post_todo,
     delete_todo,
-    get_single_todo,
 }
